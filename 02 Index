@@ -1,0 +1,27 @@
+Introduction:
+-------------
+Database Architecture
+SQL Architecture
+Backups
+Restore
+Security
+Migration
+Automation
+Login Creations & Permissions
+
+High Availibility Concepts:
+----------------------------
+LogShipping
+Mirroring
+Replication
+Clustering
+Always ON
+
+Performance Tuning:
+-------------------
+Blocking
+Deadlocks
+CPU
+Memory
+Locks
+Indexs
