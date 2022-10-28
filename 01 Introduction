@@ -1,0 +1,18 @@
+Database Administrator: 
+    -> A Person responsible for 
+            -> Database design, Implementation, maintenance, repair, backups, restore & security
+
+DBA Responsibilities:
+    -> Minimizing Downtime, Data Recovery, High Security, Monitor the performance
+    
+DBA Daily Activities:
+    -> 24/7 Support
+    -> user requirements & problems in form of tickets
+    -> alerts using email from third party tools
+    -> maintenance jobs are running successfully
+    -> All backup jobs are executed successfully without any issues
+    -> Checking SQL server logs to identify issues
+    -> Maintain drive spaces on critical servers
+    -> Regularly monitor datafile growth, logfile growth, database growth
+    -> Maintaining documentation of all the tasks & issues for further reference
+    -> checking all servers are running
