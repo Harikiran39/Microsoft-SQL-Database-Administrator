@@ -1,0 +1,28 @@
+What is Database?
+-> Collection of Master Data File(MDF) and Log Data File(LDF)
+What is MDF?
+-> Master Data file(MDF) stores Permanemt Data. Eg: Adhar card
+What is LDF?
+-> Log Data File(LDF) is a Temporary Data
+-> If we run queries in the server i.e, any transaction, 1st it goes to temporary data(LDF) works here & data info commits here then brings information from MDF
+
+How Database works?
+     
+     Master Data File(MDF)--------------------Log Data File(LDF)
+               |                                      |
+               |                                      |
+               ---------------BUFFER-------------------
+
+-> we can't do any modifications (like update,insert, etc) directly in MDF
+-> MDF stores the Permanent data in pages (1 page = 8kb) 
+-> the page will copy to BUFFER
+-> Modifications are done in buffer and sends to LDF
+-> LDF validates the data (like replace or update the data) 
+-> After that it Commits user through Checkpoint
+-> Checkpoint is a internal mechanism, once data commits the LDF will forward into MDF (it stores permanently)
+
+Which architecture does SQL Database follows?
+-> SQL Server follows Client-Server Architecture
+-> we are running SQL(Child) on Windows Server(Parent)
+           
+ 
