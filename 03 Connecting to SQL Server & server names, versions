@@ -1,0 +1,58 @@
+Connect to SQL Server - 2 types
+       1. Using MSTSC (Remote Desktop Connection)/RDP -> Username
+       2. IP Address
+  -> it asks for Credentials -> username & password
+  -> you will connect to server
+  -> open search & type SSMS (Microsoft SQL Server Management studio) -> open it
+           -> Servertype: Database engine
+           -> Server Name: Hari\JettiExpress
+           -> Authentication: Windows Authentication
+                  username: xxxxxxx
+                  password: xxxxxxx
+                -> click on connect
+                
+any issues -> connect to a particular server -> fix the issues 
+
+When we Connect it:
+  Server name (Jetti Express) & under it we can see :
+     * Database (Complete data)
+          System database
+          Andhra (user database)
+          Telengana (user database)
+     * Security
+          Logins
+          server roles
+          credentials
+     * Server objects
+          backup devices
+          linked devices
+          triggers
+     * Replication
+          local subscription
+     * Management
+          policy management
+          extended events
+          SQL server logs
+     * SQL Server agent
+     
+     SQL Servers            Versions
+  MS SQL Server 2019       15.0.426.1
+  MS SQL Server 2017         14
+  MS SQL Server 2016         13
+  MS SQL Server 2014         12
+  MS SQL Server 2012         11
+  MS SQL Server 2008         10
+  MS SQL Server 2005          9
+
+issues, updates & bugs fix by the microsoft & releases in form of Cummulative Updates (CU's) -> Service packs(sp1, sp2, sp3)
+
+To Find Versions:
+  Click -> New Query
+  Write -> SELECT @@VERSION
+  Click -> Execute 
+ you can see the version of the SQL server.
+  
+
+
+  
+  
