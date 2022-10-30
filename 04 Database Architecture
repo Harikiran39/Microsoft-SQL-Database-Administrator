@@ -1,7 +1,9 @@
 What is Database?
 -> Collection of Master Data File(MDF) and Log Data File(LDF)
+
 What is MDF?
 -> Master Data file(MDF) stores Permanemt Data. Eg: Adhar card
+
 What is LDF?
 -> Log Data File(LDF) is a Temporary Data
 -> If we run queries in the server i.e, any transaction, 1st it goes to temporary data(LDF) works here & data info commits here then brings information from MDF
