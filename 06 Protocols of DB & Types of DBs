@@ -75,6 +75,7 @@ Types of Database: 2types
         SQL Server Configuration Manager(SSCM)  => SQL Server name(Jetti Express) => SQL Server => right click => Start or Stop
   -> 2. Services -> SQL Server name(Jetti Express) -> Start or Stop
   -> 3. using Command Prompt (cmd)
-  
+
+**Command => SP_HELPDB -> To Healthcheck all dbs, sizes, owners when it created, status, compactiblity level(build numbers)
  
     
