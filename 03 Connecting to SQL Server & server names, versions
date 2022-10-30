@@ -1,6 +1,7 @@
 Connect to SQL Server - 2 types
        1. Using MSTSC (Remote Desktop Connection)/RDP -> Username
        2. IP Address
+       
   -> it asks for Credentials -> username & password
   -> you will connect to server
   -> open search & type SSMS (Microsoft SQL Server Management studio) -> open it
