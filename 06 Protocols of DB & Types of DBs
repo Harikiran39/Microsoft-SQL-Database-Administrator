@@ -1,0 +1,80 @@
+Protocols in SQL Server:
+------------------------
+-> SQL Server Network Interface(SNI) is a protocol layer that establishes the network connection between client & Server
+-> SQL Server Network Configuration Manager => SQL Server Network Configuration(32bit) => protocols for Jetti Express 
+-> to give Permissions => Security=> logins => New Logins => username => What permissions did he got.
+-> SQL supports 4 Protocols
+       1. Shared memory (Enabled)
+       2. Named Pipes (Disabled)
+       3.TCP/IP (Disabled)
+       4. VIA
+       
+ 1.Shared Memory:
+     -> Its a default protocol
+     -> connect within the Client(user) & server (within PC)
+     
+ 2.Named pipes: 
+     -> Connect within the LAN (Boundaries)we can work
+     
+ 3.TCP/IP:
+     -> No Boundaries, We can access the db globally using internet
+     -> connect using Ip address & Port Number
+     -> Port Number is 1433
+     
+ 4.VIA:
+     -> It is a wireless internet protocol for connecting clients & servers within a certin range.
+
+Types of Database: 2types
+     -> System Database: 
+     -> User Database:  
+    
+  1. System Database:
+     -> It comes with SQL installation (By default) 
+     -> In System db it contains 5 databases
+             Master db
+             model db
+             MS db
+             Temp db
+             Resourse db
+             
+       Master DB:
+         -> Its the Heart of the SQL Server.
+         -> All the Login information & configuration information are shown here
+         -> Every database needs a backup
+         -> server namnes, file locations, collation settings, etc.,
+     
+       Model DB:
+         -> Its a Templete db
+         -> Whenever we create a userdb(Andhra, telangana), the requirements(SQL) properties, structure,size of MDF, LDF taken from Model db
+         
+       MS DB:
+         -> All the job level information stored in MS db.
+         -> database we need to backup because if the db crashes, the backup we did we can build new dbserver & restore it. the same data gives to user
+         -> Our role to maintain backups. we cant backup 1000 servers daily, so that we can create jobs. SQL jobs in that we create backup jobs on Non Business hours
+         -> In case if backup fails, we have a Queue (we have a group with dbteam, we get the ticket on so & so serverbackup fails we should check it)
+         
+      Temp DB:
+         -> Stores Temporary objects(data) of the user.
+         -> When we runs a query, the informationwill be stored in temp db
+         
+      Resource DB:
+         ->Its a Hidden db
+         -> Before 2005, Service pack information was stored
+         -> After 2005, All the service pack information stored in resource db for Rollback
+         
+  2. User Database:
+         -> we create a particular database(like Andhra,Telangana etc)
+         -> Creation of User db => SSMS -> ServerName(JettiExpress)=> Database => rightclick => New Database => Db name: Hari, Owner: default => it creates 2 files
+                                  1. Hari (MDF)
+                                  2. Hari_log (LDF)
+         -> To see the file location => go to particular db => right click => properties => files => location
+                                  C:drive=> program files(x86) => Microsoft Sql server => MSSQL\\JettiExpress => mssql => Data file
+  
+ How many ways to Start or Stop the SQL Server? -> 3 ways
+  -> 1. SQL Services => Start or Stop for Patching the Server
+        SQL Server Configuration Manager(SSCM)  => SQL Server name(Jetti Express) => SQL Server => right click => Start or Stop
+  -> 2. Services -> SQL Server name(Jetti Express) -> Start or Stop
+  -> 3. using Command Prompt (cmd)
+  
+ 
+    
