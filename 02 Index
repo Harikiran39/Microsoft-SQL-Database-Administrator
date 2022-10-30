@@ -10,7 +10,7 @@ Automation
 Login Creations & Permissions
 
 High Availibility Concepts:
-----------------------------
+---------------------------
 LogShipping
 Mirroring
 Replication
@@ -18,7 +18,7 @@ Clustering
 Always ON
 
 Performance Tuning:
--------------------
+------------------
 Blocking
 Deadlocks
 CPU
